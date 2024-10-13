@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcation</title>
+</head>
+<body>
+    <script>
+        //定义函数
+        function getWeb() {
+            return "seektao.cc"
+        }
+
+        console.log("网站", getWeb())
+
+        function getWeb1(site) {
+            return site
+        }
+        console.log("网站", getWeb1('www.seekao.cc'))
+
+        // 匿名函数
+        let sub = function(x,y) {
+            return x-y
+        }
+        console.log("res", sub(10,10))
+
+        // 箭头函数
+        let funcPlus = (a,b) => {
+            return a+b
+        }
+        console.log(funcPlus(10,10))
+
+        // 箭头函数
+        // 隐式返回 [在函数体内只有一个表达式的情况下, 可以省略花括号 {} 和 return 关键字]
+        let funcPlus2 = (a,b) => a+b
+        console.log(funcPlus2(10,20))
+    </script>
+</body>
+</html>

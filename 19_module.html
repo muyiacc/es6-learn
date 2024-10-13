@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 从入门到精通 Module</title>
+</head>
+
+<body>
+    <script type="module">
+        // 第一种
+        // import {title,web,getWeb} from './19_module.js'
+
+        // console.log(title)
+        // console.log(web)
+        // console.log(getWeb())
+
+        // 第二种
+        // import obj from './19_module.js'
+
+        // console.log(obj.title)
+        // console.log(obj.web)
+        // console.log(obj.getWeb())
+
+        // 第三种
+        import * as obj from './19_module.js'
+
+        console.log(obj.title)
+        console.log(obj.web)
+        console.log(obj.getWeb())
+    </script>
+</body>
+
+</html>

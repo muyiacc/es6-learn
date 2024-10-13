@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        //定义数组
+        // let arr = new Array(10,11,12,13,14,15)
+        let arr = [10, 11, 12]
+        console.log("arr", arr);
+
+        // push 向数组末尾添加一个或多个元素, 并返回修改后数组的长度
+        let arrLenth = arr.push(13, 14)
+        console.log("arr", arr);
+        console.log("arrLenth", arrLenth)
+
+        // unshift 向数组开头添加一个或多个元素, 并返回修改后数组的长度
+        arrLenth = arr.unshift(8, 9)
+        console.log("arr", arr);
+        console.log("arrLenth", arrLenth);
+
+        // shift 删除数组中第一个元素, 并返回被删除元素
+        let delElement = arr.shift()
+        console.log("arr", arr);
+        console.log("delElement", delElement);
+
+        // pop 删除数组最后一个元素, 并返回被删除元素
+        delElement = arr.pop()
+        console.log("arr", arr);
+        console.log("delElement", delElement);
+
+        // splice 删除元素, 并返回包含被删除元素的数组 splice(要删除元素的索引位置, 要删除的元素数量)
+        //let delArr = arr.splice(2, 1) // 删除第3个元素 [数组的索引是从 0 开始]
+        let delArr = arr.splice(2, 1)
+        console.log("arr", arr);
+        console.log("delArr", delArr);
+
+        // reverse 颠倒数组中元素的顺序
+        arr.reverse()
+        console.log("arr", arr);
+
+        //数组中的元素按照首字母顺序排序
+        let arr2 = ["apple", "orange", "banana"]
+        arr2.sort()
+        console.log("arr2", arr2);
+
+
+        // sort 数组中的元素按照数字排序
+        let arr3 = [12, 2, 43, 51, 524, 212]
+        arr3.sort((a, b) => a - b)
+        console.log("arr3", arr3);
+
+        // filter 筛选符合条件的元素, 返回一个新的数组
+        let newArr3 = arr3.filter((a) => a > 12)
+        console.log("newArr3", newArr3);
+
+        // concat 将多个数组或值合并为一个新数组
+        let arr4 = arr3.concat(['hello', 'world'])
+        console.log("arr4", arr4);
+
+        //使用for...of循环遍历数组
+        for (const arr of arr4) {
+            console.log("for...of:", arr)
+        }
+
+
+        //使用forEach方法来遍历数组
+        arr4.forEach((value, index) => {
+            console.log("forEach:", "value", value, "index", index)
+        })
+
+    </script>
+</body>
+
+</html>
